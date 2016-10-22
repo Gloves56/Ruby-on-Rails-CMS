@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+#        article: masculino/femenino
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Crear nuevo review
+            reorder: Reordenar reviews
+            reorder_done: Reordenación de reviews completada
+          records:
+            title: Reviews
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay reviews todavía. Pulsa en "Crear nuevo Review" para crear tu primer review.
+          review:
+            view_live_html: Ver este review como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este review
+            delete: Borrar este review para siempre
+      reviews:
+        show:
+          other: Otros reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

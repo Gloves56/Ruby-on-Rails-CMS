@@ -1,0 +1,51 @@
+<% content_for :body_content_title do %>
+  <%= @review.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Name</h1>
+    <p>
+      <%=raw @review.name %>
+    </p>
+  </section>
+  <section>
+    <h1>User Name</h1>
+    <p>
+      <%=raw @review.user_name %>
+    </p>
+  </section>
+  <section>
+    <h1>Reviewed On</h1>
+    <p>
+      <%=raw @review.reviewed_on %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @review.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Description</h1>
+    <p>
+      <%=raw @review.description %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="reviews">
+      <% @reviews.each do |review| %>
+        <li>
+          <%= link_to review.name, refinery.reviews_review_path(review) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

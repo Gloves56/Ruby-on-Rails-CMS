@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Lag en ny Review
+            reorder: Endre rekkefølgen på Reviews
+            reorder_done: Ferdig å endre rekkefølgen Reviews
+          records:
+            title: Reviews
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Reviews enda. Klikk på "Lag en ny Review" for å legge til din første review.
+          review:
+            view_live_html: Vis hvordan denne review ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne review
+            delete: Fjern denne review permanent
+      reviews:
+        show:
+          other: Andre Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Nieuwe Review toevoegen
+            reorder: De volgorde van de Reviews wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Review-volgorde
+          records:
+            title: Reviews
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Reviews. Druk op 'Nieuwe Review toevoegen' om de eerste toe te voegen.
+          review:
+            view_live_html: Deze review op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze review
+            delete: Deze review definitief verwijderen
+      reviews:
+        show:
+          other: Andere Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

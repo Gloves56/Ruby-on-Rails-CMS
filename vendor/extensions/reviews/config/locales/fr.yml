@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Review
+            reorder: Réordonner les Reviews
+            reorder_done: Fin de réordonnancement des Reviews
+          records:
+            title: Reviews
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Review. Cliquer sur "Créer un(e) nouve(au/l/lle) Review" pour créer votre premi(er/ère) review.'
+          review:
+            view_live_html: Voir ce(t/tte) review <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) review
+            delete: Supprimer définitivement ce(t/tte) review
+      reviews:
+        show:
+          other: Autres Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

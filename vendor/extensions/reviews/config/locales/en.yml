@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Add New Review
+            reorder: Reorder Reviews
+            reorder_done: Done Reordering Reviews
+          records:
+            title: Reviews
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Reviews yet. Click "Add New Review" to add your first review.
+          review:
+            view_live_html: View this review live <br/><em>(opens in a new window)</em>
+            edit: Edit this review
+            delete: Remove this review forever
+      reviews:
+        show:
+          other: Other Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

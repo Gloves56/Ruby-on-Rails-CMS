@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Yeni Ekle Review
+            reorder: Tekrar sirala Reviews
+            reorder_done: Tekrar siralama tamamlandiReviews
+          records:
+            title: Reviews
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Reviews yok henuz.  Tikla "Yeni Ekle Review" eklemek senin ilk review.
+          review:
+            view_live_html: Bunu canlu review goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle review
+            delete: Bunu Sil review sonsuza dek
+      reviews:
+        show:
+          other: Diger Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

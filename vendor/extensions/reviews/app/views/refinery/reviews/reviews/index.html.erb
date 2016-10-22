@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="reviews">
+    <% @reviews.each do |review| %>
+      <li>
+        <%= link_to review.name, refinery.reviews_review_path(review) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Přidat Review
+            reorder: Řadit Reviews
+            reorder_done: Konec řazení Reviews
+          records:
+            title: Reviews
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Reviews. Zvolte "Přidat Review" pro přidání prvního review.
+          review:
+            view_live_html: Zobrazit náhled review<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit review
+            delete: Smazat review
+      reviews:
+        show:
+          other: Další Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description

@@ -1,0 +1,31 @@
+ru:
+  refinery:
+    plugins:
+      reviews:
+        title: Reviews
+    reviews:
+      admin:
+        reviews:
+          actions:
+            create_new: Добавить Review
+            reorder: Изменить порядок Reviews
+            reorder_done: Закончить изменять порядок Reviews
+          records:
+            title: Reviews
+            sorry_no_results: "Извините, поиск не дал результатов."
+            no_items_yet: Записей "Reviews" не найдено. Нажмите "Добавить Review" чтобы создать review.
+          review:
+            view_live_html: Просмотреть review вживую <br/><em>(в новом окне)</em>
+            edit: Редактировать review
+            delete: Удалить review навсегда
+      reviews:
+        show:
+          other: Другие Reviews
+  activerecord:
+    attributes:
+      'refinery/reviews/review':
+        name: Name
+        user_name: User Name
+        reviewed_on: Reviewed On
+        photo: Photo
+        description: Description
